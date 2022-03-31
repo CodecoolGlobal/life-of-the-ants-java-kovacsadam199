@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class Position {
 
-    public final int x;
-    public final int y;
+    public int x;
+    public int y;
 
     public Position(int x, int y) {
         this.x = x;
@@ -31,4 +31,22 @@ public class Position {
         return new int[]{x,y};
     }
 
+    public void setX(int x){
+        this.x=x;
+    }
+    public int getX(){
+        return this.x;
+    }
+    public int getY(){
+        return this.y;
+    }
+    public void setY(int y){
+        this.y=y;
+    }
+    public void setRandomX(int width){
+        this.x= new Random().nextInt(width);
+    }
+    public void setRandomY(int width){
+        this.y=new Random().nextInt(width);
+    }
 }

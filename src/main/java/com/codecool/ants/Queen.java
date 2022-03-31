@@ -24,17 +24,18 @@ public class Queen extends Ant{
     }
 
     @Override
-    public void act() {
+    public void act(int width) {
         matingMood--;
         if (matingMood== 0){
             readyToMate= true;
+            System.out.println("Queen is ready");
         }
 
     }
 
     @Override
     public String getType() {
-        return "Q";
+        return "\uD83D\uDC51  ";
     }
 
     public int[] getPosition(){
