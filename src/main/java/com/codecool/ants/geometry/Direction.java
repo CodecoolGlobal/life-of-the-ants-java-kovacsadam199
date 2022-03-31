@@ -1,5 +1,27 @@
 package com.codecool.ants.geometry;
 
-    public enum Direction {
+import java.util.Random;
+
+public enum Direction {
         NORTH, EAST, SOUTH, WEST;
+
+        public Direction getRandomDirection(){
+            Random random = new Random();
+            int number = random.nextInt(4);
+            Direction direction=Direction.NORTH;
+            switch (number){
+                case 0:
+                    direction=Direction.NORTH;
+                case 1:
+                    direction=Direction.SOUTH;
+                    break;
+                case 2:
+                    direction=Direction.EAST;
+                    break;
+                case 3:
+                    direction=Direction.WEST;
+                    break;
+            }
+            return direction;
+        }
     }
