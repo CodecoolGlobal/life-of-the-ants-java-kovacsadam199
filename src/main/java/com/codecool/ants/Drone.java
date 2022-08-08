@@ -45,8 +45,6 @@ public class Drone extends Ant {
                     position.setRandomX(width);
                     break;
             }
-            System.out.println("kicked ");
-            System.out.println(Arrays.toString(position.getPosition()));
             return;
         }
         if(queenIsLeft && queenIsUp)
@@ -55,7 +53,6 @@ public class Drone extends Ant {
             direction= Direction.WEST;
         else if(queenIsLeft)
             direction=Direction.SOUTH;
-        // other half
         else if(queenIsUp)
             direction=Direction.NORTH;
         else if(queenIsHorizontal)

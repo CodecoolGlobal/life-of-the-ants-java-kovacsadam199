@@ -16,7 +16,7 @@ public class AntColony {
         this.width = width;
         map=new String[width][width];
         ants= new ArrayList<>();
-        generateAnts(0, 5, 0, width);
+        generateAnts(3, 3, 3, width);
     }
 
     public void update(int width, int[] queenPosition) {
